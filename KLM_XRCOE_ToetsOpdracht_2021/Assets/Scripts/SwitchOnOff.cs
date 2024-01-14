@@ -25,7 +25,7 @@ public class SwitchOnOff : MonoBehaviour
                 light.enabled = true;
             }
 
-
+             
         }
 
     }

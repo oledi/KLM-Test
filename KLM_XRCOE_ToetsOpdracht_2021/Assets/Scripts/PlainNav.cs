@@ -13,7 +13,23 @@ public class PlainNav : MonoBehaviour
     void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
     }
+
+    private void OnDestroy()
+    {
+        GameManager.OnGameStateChanged -= GameManagerOnGameStateChanged;
+
+    }
+
+    private void GameManagerOnGameStateChanged(Gamestate gamestate)
+    {
+        if (gamestate == Gamestate.Park)
+        {
+            parkPlains = true;
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
