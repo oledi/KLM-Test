@@ -11,11 +11,14 @@ public class PlainNav : MonoBehaviour
     Vector3 nextPosition;
 
     private NavMeshAgent navMeshAgent;
+    private GameObject Hangar;
+
 
     void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
         GameManager.OnGameStateChanged += GameManagerOnGameStateChanged;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+
     }
 
     private void OnDestroy()
@@ -26,6 +29,8 @@ public class PlainNav : MonoBehaviour
 
     private void Start()
     {
+        //System.Random random = new System.Random();
+        Hangar= AssignHangerToPlain();
         nextPosition = transform.position;
     }
 
@@ -46,8 +51,9 @@ public class PlainNav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (parkPlains) //Input.GetKeyDown(KeyCode.Space)
+        if (parkPlains) 
         {
+            moveToLocation = Hangar.transform;
             navMeshAgent.destination = moveToLocation.position;
         }
 
@@ -57,10 +63,19 @@ public class PlainNav : MonoBehaviour
             {
                 nextPosition = NewMovePosition(transform.position, 30);
                 navMeshAgent.destination = nextPosition;
-               // navMeshAgent.destination = new Vector3(0, 0, 0);
             }
         }
 
+    }
+
+
+    private GameObject AssignHangerToPlain()
+    {
+        var hangars = GameObject.FindGameObjectsWithTag("Hangar");
+
+        var hangar = hangars[Random.Range(0, hangars.Length)];
+
+        return hangar;
     }
 
     private void OnDrawGizmos()

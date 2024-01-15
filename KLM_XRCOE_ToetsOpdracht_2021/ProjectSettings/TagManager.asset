@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ParkingLocator
+  - B737
+  - B747
+  - A330
+  - E175
+  - Hangar
   layers:
   - Default
   - TransparentFX

@@ -24,10 +24,6 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void OnEntryNumberOfPlains() {
-        GameManager.Instance.UpdateGameState(Gamestate.Roam);
-    }
-
     public void ParkAllPlains() {
         GameManager.Instance.UpdateGameState(Gamestate.Park);
     }

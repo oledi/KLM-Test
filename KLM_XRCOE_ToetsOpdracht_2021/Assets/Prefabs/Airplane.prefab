@@ -194,6 +194,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveToLocation: {fileID: 0}
   parkPlains: 0
+  startRoaming: 0
+  parkingLocators: []
+  PlainNames:
+  - PH-ABC
+  - PH-XYZ
+  - PH-KLM
+  - PH-RST
+  - PH-HIJ
 --- !u!195 &5424165432083951157
 NavMeshAgent:
   m_ObjectHideFlags: 0
