@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     public Gamestate state;
 
+    public RaycastHit raycastHit;
     public static event Action<Gamestate> OnGameStateChanged;
 
     private void Awake()
