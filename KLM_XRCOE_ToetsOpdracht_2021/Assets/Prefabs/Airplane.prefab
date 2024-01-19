@@ -436,9 +436,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7921607096605304072}
-  - component: {fileID: -486081926781107363}
   - component: {fileID: 5424165432083951157}
   - component: {fileID: -1796370724082371039}
+  - component: {fileID: 2391947361433695536}
   m_Layer: 0
   m_Name: Airplane
   m_TagString: Untagged
@@ -466,21 +466,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-486081926781107363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5684232133528882782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66b063392431db4f8c0ff98619e3730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveToLocation: {fileID: 0}
-  parkPlains: 0
-  startRoaming: 0
 --- !u!195 &5424165432083951157
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -516,6 +501,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planeDetailText: {fileID: 5536042783590350611}
+--- !u!114 &2391947361433695536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5684232133528882782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66b063392431db4f8c0ff98619e3730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkPlains: 0
+  startRoaming: 0
+  spawnData: {fileID: 11400000, guid: f05c68a30838c784bb9645d2fe802593, type: 2}
 --- !u!1 &7351374897449498107
 GameObject:
   m_ObjectHideFlags: 0

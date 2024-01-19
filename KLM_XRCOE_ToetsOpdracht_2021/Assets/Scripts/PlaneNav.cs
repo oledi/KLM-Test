@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PlainNav : MonoBehaviour
+public class PlaneNav : MonoBehaviour
 {
-    [SerializeField] private Transform moveToLocation;
+    private Vector3 parkingLocation;
     public bool parkPlains;
     public bool startRoaming;
     Vector3 nextPosition;
 
     private NavMeshAgent navMeshAgent;
-    private GameObject Hangar;
+    //private GameObject Hangar;
+
+    public SpawnData spawnData;
 
 
     void Awake()
@@ -30,7 +32,8 @@ public class PlainNav : MonoBehaviour
     private void Start()
     {
         //System.Random random = new System.Random();
-        Hangar= AssignHangerToPlain();
+        //Hangar= AssignHangerToPlain();
+        parkingLocation = AssignHangerToPlain();
         nextPosition = transform.position;
     }
 
@@ -53,8 +56,8 @@ public class PlainNav : MonoBehaviour
     {
         if (parkPlains) 
         {
-            moveToLocation = Hangar.transform;
-            navMeshAgent.destination = moveToLocation.position;
+            //moveToLocation = Hangar.transform;
+            navMeshAgent.destination = parkingLocation;
         }
 
         if (startRoaming)
@@ -69,13 +72,12 @@ public class PlainNav : MonoBehaviour
     }
 
 
-    private GameObject AssignHangerToPlain()
+    private Vector3 AssignHangerToPlain()
     {
         var hangars = GameObject.FindGameObjectsWithTag("Hangar");
-
-        var hangar = hangars[Random.Range(0, hangars.Length)];
-
-        return hangar;
+        //var hangarLocation = spawnData.HangarSpawnPoints[Random.Range(0, spawnData.HangarSpawnPoints.Count)];    
+        var hangarLocation = hangars[Random.Range(0, hangars.Length)].transform.position;
+        return hangarLocation;
     }
 
     private void OnDrawGizmos()

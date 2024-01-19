@@ -7,13 +7,12 @@ using UnityEngine.AI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public SpawnData spawnData;
     public GameObject airplane;
     public GameObject Hangar;
 
     private int NumberOfPlains;
     private int NumberOfHangars;
-    public List<string> PlainNames;
-    public string[] PlainTypes;
 
     public Gamestate state;
 
@@ -55,19 +54,23 @@ public class GameManager : MonoBehaviour
     {
         for(var i=0; i< NumberOfPlains; i++) {
 
-            var newplain = Instantiate(airplane, new Vector3((i-1.5f) * 2.0f, 0, 0), Quaternion.identity);
+            var spawnpoint = spawnData.PlaneSpawnPoints[UnityEngine.Random.Range(0, spawnData.PlaneSpawnPoints.Count)];
 
-            string name = PlainNames[UnityEngine.Random.Range(0, PlainNames.Count)];
-            PlainNames.Remove(name);
+            var newplain = Instantiate(airplane, spawnpoint, Quaternion.identity); 
+
+            string name = spawnData.PlaneNames[i];
+
             newplain.name = name;
-            newplain.tag = PlainTypes[UnityEngine.Random.Range(0, PlainTypes.Length)];
+            newplain.tag = spawnData.PlaneTypes[UnityEngine.Random.Range(0, spawnData.PlaneTypes.Length)];
         }
     }
 
     private void InstantiateHangars() {
         for(var i = 0; i < NumberOfHangars; i++)
         {
-            var NewHangar  = Instantiate(Hangar, new Vector3((i-1.5f) * 2.0f, 1.78814e-07f, 2.54f), Quaternion.identity);
+
+            var NewHangar = Instantiate(Hangar, spawnData.HangarSpawnPoints[i], Quaternion.Euler(spawnData.HangarSpawnRotations[i]));
+
             NewHangar.name = "Hangar" + i;
         }
     }
