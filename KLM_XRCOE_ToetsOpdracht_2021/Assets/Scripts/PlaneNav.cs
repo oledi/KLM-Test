@@ -6,12 +6,11 @@ using UnityEngine.AI;
 public class PlaneNav : MonoBehaviour
 {
     private Vector3 parkingLocation;
-    public bool parkPlains;
+    public bool parkPlane;
     public bool startRoaming;
     Vector3 nextPosition;
 
     private NavMeshAgent navMeshAgent;
-    //private GameObject Hangar;
 
     public SpawnData spawnData;
 
@@ -31,9 +30,7 @@ public class PlaneNav : MonoBehaviour
 
     private void Start()
     {
-        //System.Random random = new System.Random();
-        //Hangar= AssignHangerToPlain();
-        parkingLocation = AssignHangerToPlain();
+        parkingLocation = AssignHangerToPlane();
         nextPosition = transform.position;
     }
 
@@ -41,7 +38,7 @@ public class PlaneNav : MonoBehaviour
     {
         if (gamestate == Gamestate.Park)
         {
-            parkPlains = true;
+            parkPlane = true;
         }
 
         if (gamestate == Gamestate.Roam) 
@@ -54,7 +51,7 @@ public class PlaneNav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (parkPlains) 
+        if (parkPlane) 
         {
             //moveToLocation = Hangar.transform;
             navMeshAgent.destination = parkingLocation;
@@ -72,10 +69,9 @@ public class PlaneNav : MonoBehaviour
     }
 
 
-    private Vector3 AssignHangerToPlain()
+    private Vector3 AssignHangerToPlane()
     {
         var hangars = GameObject.FindGameObjectsWithTag("Hangar");
-        //var hangarLocation = spawnData.HangarSpawnPoints[Random.Range(0, spawnData.HangarSpawnPoints.Count)];    
         var hangarLocation = hangars[Random.Range(0, hangars.Length)].transform.position;
         return hangarLocation;
     }
@@ -99,8 +95,8 @@ public class PlaneNav : MonoBehaviour
         return Final_Pos;
     }
 
-    public void ParkPlainsEvent(bool parkEventIsTriggered) 
+    public void ParkPlaneEvent(bool parkEventIsTriggered) 
     {
-        parkPlains = parkEventIsTriggered;
+        parkPlane = parkEventIsTriggered;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class MouseControls : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -13,16 +14,9 @@ public class MouseControls : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         _renderer = GetComponentInChildren<Renderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        print(gameObject.name + gameObject.tag);
-        var detailText = planeDetailText.GetComponent<TextMesh>();
+        var detailText = planeDetailText.GetComponent<TextMeshPro>();
         detailText.text = gameObject.name + " " + gameObject.tag;
         
         if(planeDetailText.activeSelf == false) { planeDetailText.SetActive(true); }

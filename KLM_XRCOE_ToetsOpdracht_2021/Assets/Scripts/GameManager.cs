@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject airplane;
     public GameObject Hangar;
 
-    private int NumberOfPlains;
+    private int NumberOfPlanes;
     private int NumberOfHangars;
 
     public Gamestate state;
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
                 break;
             case Gamestate.Roam:
                 InstantiateHangars();
-                InstantiatePlains();
+                InstantiatePlanes();
                     break;
             case Gamestate.Park:
                     break;
@@ -50,18 +50,18 @@ public class GameManager : MonoBehaviour
         OnGameStateChanged?.Invoke(newState);
     }
 
-    private void InstantiatePlains()
+    private void InstantiatePlanes()
     {
-        for(var i=0; i< NumberOfPlains; i++) {
+        for(var i=0; i< NumberOfPlanes; i++) {
 
             var spawnpoint = spawnData.PlaneSpawnPoints[UnityEngine.Random.Range(0, spawnData.PlaneSpawnPoints.Count)];
 
-            var newplain = Instantiate(airplane, spawnpoint, Quaternion.identity); 
+            var newplane = Instantiate(airplane, spawnpoint, Quaternion.identity); 
 
             string name = spawnData.PlaneNames[i];
 
-            newplain.name = name;
-            newplain.tag = spawnData.PlaneTypes[UnityEngine.Random.Range(0, spawnData.PlaneTypes.Length)];
+            newplane.name = name;
+            newplane.tag = spawnData.PlaneTypes[UnityEngine.Random.Range(0, spawnData.PlaneTypes.Length)];
         }
     }
 
@@ -75,9 +75,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnEntryNumberOfPlains(string numberOfPlains)
+    public void OnEntryNumberOfPlanes(string numberOfPlanes)
     {
-        NumberOfPlains = int.Parse(numberOfPlains); //Of restricties zetten op input field of TryParse. or both! both is good :D
+        NumberOfPlanes = int.Parse(numberOfPlanes); //Of restricties zetten op input field of TryParse. or both! both is good :D
     }
 
     public void OnEntryNumberOfHangars(string numberOfHangars)

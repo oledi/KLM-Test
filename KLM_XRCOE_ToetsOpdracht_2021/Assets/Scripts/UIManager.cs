@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject startMenuPanel, numberOfPlains;
+    [SerializeField] private GameObject startMenuPanel, numberOfPlanes;
 
 
     private void Awake()
@@ -24,20 +24,8 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void ParkAllPlains() {
+    public void ParkAllPlanes() {
         GameManager.Instance.UpdateGameState(Gamestate.Park);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 }
