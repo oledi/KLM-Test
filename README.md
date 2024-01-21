@@ -1,7 +1,7 @@
 # KLM_XRCOE_Opdracht_2021
 ## Components and behavior:
-* StartMenu
-* Ingame Menu
+* Start Menu
+* In game Menu
 * Planes and hangars spawn
 * Planes are assigned a runway
 * Planes will move across runway
