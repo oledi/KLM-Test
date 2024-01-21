@@ -14,6 +14,14 @@ public class PlaneNav : MonoBehaviour
 
     public SpawnData spawnData;
 
+    private Vector3 startRunwayLocation;
+    private Vector3 endRunwayLocation;
+
+    private float groundLevel = 2f;
+    private float skyLevel = 8f;
+    private float graceDistance = 1f;
+    private float randomPositionRadius = 30f;
+
 
     void Awake()
     {
@@ -30,8 +38,10 @@ public class PlaneNav : MonoBehaviour
 
     private void Start()
     {
+        AssignRunwayToPlane();
+        navMeshAgent.destination = startRunwayLocation;
         parkingLocation = AssignHangerToPlane();
-        nextPosition = transform.position;
+        nextPosition = endRunwayLocation;//transform.position;
     }
 
     private void GameManagerOnGameStateChanged(Gamestate gamestate)
@@ -59,15 +69,32 @@ public class PlaneNav : MonoBehaviour
 
         if (startRoaming)
         {
-            if (Vector3.Distance(nextPosition, transform.position) <= 1.5f) 
+
+            if (!navMeshAgent.pathPending && !parkPlane && gameObject.transform.position.y <= groundLevel)
             {
-                nextPosition = NewMovePosition(transform.position, 30);
-                navMeshAgent.destination = nextPosition;
+                if (navMeshAgent.remainingDistance < graceDistance) 
+                {
+                    navMeshAgent.destination = endRunwayLocation;
+                }
+            }
+
+            if (gameObject.transform.position.y >= skyLevel)
+            {
+                if (Vector3.Distance(nextPosition, transform.position) <= graceDistance)
+                {
+                    nextPosition = NewMovePosition(transform.position, randomPositionRadius);
+                    navMeshAgent.destination = nextPosition;
+                }
             }
         }
 
     }
 
+    private void AssignRunwayToPlane() {
+        var randomNumber = Random.Range(0, spawnData.RunwayStartLocation.Length);
+        startRunwayLocation = spawnData.RunwayStartLocation[randomNumber];
+        endRunwayLocation = spawnData.RunwayEndLocation[randomNumber];
+    }
 
     private Vector3 AssignHangerToPlane()
     {
@@ -84,7 +111,7 @@ public class PlaneNav : MonoBehaviour
 
     public Vector3 NewMovePosition(Vector3 startPoint, float radius) 
     {
-        Vector3 dir = Random.insideUnitSphere * radius;
+        Vector3 dir = Random.insideUnitCircle * radius;
         dir += startPoint;
         NavMeshHit Hit;
         Vector3 Final_Pos = Vector3.zero;

@@ -183,6 +183,10 @@ PrefabInstance:
       value: RunwayExtend
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -286,7 +290,7 @@ GameObject:
   - component: {fileID: 28737445}
   - component: {fileID: 28737444}
   - component: {fileID: 28737443}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +386,7 @@ GameObject:
   - component: {fileID: 33641980}
   - component: {fileID: 33641979}
   - component: {fileID: 33641978}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +564,7 @@ GameObject:
   - component: {fileID: 51106925}
   - component: {fileID: 51106924}
   - component: {fileID: 51106923}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -961,6 +965,10 @@ PrefabInstance:
       value: RunwayExtend (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1127,6 +1135,10 @@ PrefabInstance:
       value: RunwayExtend (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -1219,6 +1231,97 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4206739141726252236, guid: 824f6a85d192a4fa68989861264b4c2c, type: 3}
   m_PrefabInstance: {fileID: 162664088}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &175674759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175674762}
+  - component: {fileID: 175674761}
+  - component: {fileID: 175674760}
+  m_Layer: 0
+  m_Name: ScenicLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &175674760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175674759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 21
+  m_MaxRayIntersections: 0
+--- !u!20 &175674761
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175674759}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &175674762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175674759}
+  m_LocalRotation: {x: 0.150731, y: 0.45197883, z: -0.079988, w: 0.8755554}
+  m_LocalPosition: {x: -64.01, y: 22.31, z: -23.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 19.649, y: 54.567, z: -0.232}
 --- !u!1 &178130431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1334,7 @@ GameObject:
   - component: {fileID: 178130435}
   - component: {fileID: 178130434}
   - component: {fileID: 178130433}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1450,7 @@ Transform:
   - {fileID: 1299720377}
   - {fileID: 474441032}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &228122977
 PrefabInstance:
@@ -1411,6 +1514,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_Name
       value: RunwayBigMarkers
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1846,7 +1953,7 @@ GameObject:
   - component: {fileID: 310330698}
   - component: {fileID: 310330697}
   - component: {fileID: 310330696}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1939,7 +2046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326112482}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: RunwayAalsmeerbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2159,7 @@ GameObject:
   - component: {fileID: 337544282}
   - component: {fileID: 337544281}
   - component: {fileID: 337544280}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2148,7 +2255,7 @@ GameObject:
   - component: {fileID: 347058166}
   - component: {fileID: 347058165}
   - component: {fileID: 347058164}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2336,7 +2443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354382079}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Buitenveldertbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2424,6 +2531,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_Name
       value: RunwayBigMarkers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2534,7 +2645,7 @@ GameObject:
   - component: {fileID: 365886173}
   - component: {fileID: 365886172}
   - component: {fileID: 365886171}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2627,7 +2738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386213404}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2726,6 +2837,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_Name
       value: RunwayStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2869,7 +2984,7 @@ GameObject:
   - component: {fileID: 517295584}
   - component: {fileID: 517295583}
   - component: {fileID: 517295582}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3095,6 +3210,10 @@ PrefabInstance:
       value: RunwayStart
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3165,6 +3284,10 @@ PrefabInstance:
       value: RunwayStart
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -3233,6 +3356,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3524,7 +3651,7 @@ GameObject:
   - component: {fileID: 607500814}
   - component: {fileID: 607500813}
   - component: {fileID: 607500812}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3677,7 +3804,7 @@ GameObject:
   - component: {fileID: 629995773}
   - component: {fileID: 629995772}
   - component: {fileID: 629995771}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3872,9 +3999,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682301179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.387615, y: 2.012743, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2068697319}
   m_Father: {fileID: 1975854851}
@@ -3882,7 +4009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 75.7}
+  m_AnchoredPosition: {x: 4.200012, y: 44.35106}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &682301181
@@ -4137,6 +4264,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4429,13 +4560,14 @@ GameObject:
   m_Component:
   - component: {fileID: 715237510}
   - component: {fileID: 715237511}
+  - component: {fileID: 715237512}
   m_Layer: 0
-  m_Name: TowerCam (2)
+  m_Name: TowerCamLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &715237510
 Transform:
   m_ObjectHideFlags: 0
@@ -4457,7 +4589,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715237509}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -4493,6 +4625,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &715237512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715237509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 21
+  m_MaxRayIntersections: 0
 --- !u!1 &786310050
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,6 +4796,10 @@ PrefabInstance:
       value: RunwayExtend (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -4752,7 +4904,7 @@ GameObject:
   - component: {fileID: 865816522}
   - component: {fileID: 865816521}
   - component: {fileID: 865816520}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4991,6 +5143,10 @@ PrefabInstance:
       value: RunwayExtend (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -5222,6 +5378,10 @@ PrefabInstance:
       value: RunwayExtend
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -5244,7 +5404,7 @@ GameObject:
   - component: {fileID: 938115954}
   - component: {fileID: 938115953}
   - component: {fileID: 938115952}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5507,7 +5667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_EventMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 21
   m_MaxRayIntersections: 0
 --- !u!1001 &969920904
 PrefabInstance:
@@ -5567,6 +5727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5685,13 +5849,30 @@ GameObject:
   m_Component:
   - component: {fileID: 974123097}
   - component: {fileID: 974123096}
+  - component: {fileID: 974123095}
   m_Layer: 0
-  m_Name: TowerCam
+  m_Name: TowerCamFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &974123095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974123094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 21
+  m_MaxRayIntersections: 0
 --- !u!20 &974123096
 Camera:
   m_ObjectHideFlags: 0
@@ -5699,7 +5880,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974123094}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -5813,6 +5994,10 @@ PrefabInstance:
       value: RunwayBigMarkers (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -5835,7 +6020,7 @@ GameObject:
   - component: {fileID: 1006944283}
   - component: {fileID: 1006944282}
   - component: {fileID: 1006944281}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6173,6 +6358,10 @@ PrefabInstance:
       value: RunwayBigMarkers
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -6407,6 +6596,10 @@ PrefabInstance:
       value: RunwayExtend (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -6477,6 +6670,10 @@ PrefabInstance:
       value: RunwayStart
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -6545,6 +6742,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6662,6 +6863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1084629894}
   - component: {fileID: 1084629895}
+  - component: {fileID: 1084629896}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6699,6 +6901,26 @@ MonoBehaviour:
   airplane: {fileID: 5684232133528882782, guid: df3ed748b33e347d093c5eb104e90311, type: 3}
   Hangar: {fileID: 3681011253478756759, guid: e933b2f8a06b24a5b97f133aec098a8a, type: 3}
   state: 0
+--- !u!114 &1084629896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084629893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ec101435c1cd94d9d62c91bdd12c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 963194227}
+  - {fileID: 1862457365}
+  - {fileID: 974123096}
+  - {fileID: 1768252666}
+  - {fileID: 715237511}
+  - {fileID: 1336068821}
+  - {fileID: 175674761}
 --- !u!1 &1085285354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6958,6 +7180,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4206739141726252236, guid: 824f6a85d192a4fa68989861264b4c2c, type: 3}
   m_PrefabInstance: {fileID: 1118676600}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1124377718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124377719}
+  - component: {fileID: 1124377721}
+  - component: {fileID: 1124377720}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1124377719
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124377718}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7022038, y: 0.60261047, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1975854851}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.200012, y: -31.515564}
+  m_SizeDelta: {x: 225.42, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1124377720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124377718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Camera Controls:
+
+    Main: 0
+
+    BirdsEye: -
+
+    Tower front: 1
+
+    Tower
+    right: 2
+
+    Tower left: 3
+
+    Scenic right: 5
+
+    Scenic right: 6'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1124377721
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124377718}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1129875924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7016,6 +7387,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_Name
       value: RunwayStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7122,7 +7497,7 @@ GameObject:
   - component: {fileID: 1144296281}
   - component: {fileID: 1144296280}
   - component: {fileID: 1144296279}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7284,7 +7659,7 @@ GameObject:
   - component: {fileID: 1175901333}
   - component: {fileID: 1175901332}
   - component: {fileID: 1175901331}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8089,6 +8464,10 @@ PrefabInstance:
       value: RunwayBigMarkers (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8245,6 +8624,10 @@ PrefabInstance:
       value: RunwayBigMarkers
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -8267,7 +8650,7 @@ GameObject:
   - component: {fileID: 1332793126}
   - component: {fileID: 1332793125}
   - component: {fileID: 1332793124}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8351,6 +8734,97 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332793122}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1336068819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336068822}
+  - component: {fileID: 1336068821}
+  - component: {fileID: 1336068820}
+  m_Layer: 0
+  m_Name: ScenicRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1336068820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336068819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 21
+  m_MaxRayIntersections: 0
+--- !u!20 &1336068821
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336068819}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1336068822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336068819}
+  m_LocalRotation: {x: -0, y: -0.24958481, z: -0, w: 0.968353}
+  m_LocalPosition: {x: 14.42, y: 8, z: -8.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -28.906, z: 0}
 --- !u!1 &1336094452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,7 +8992,7 @@ GameObject:
   - component: {fileID: 1344338591}
   - component: {fileID: 1344338590}
   - component: {fileID: 1344338589}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8693,7 +9167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354131444}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8744,7 +9218,7 @@ GameObject:
   - component: {fileID: 1356601195}
   - component: {fileID: 1356601194}
   - component: {fileID: 1356601193}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8840,7 +9314,7 @@ GameObject:
   - component: {fileID: 1405308259}
   - component: {fileID: 1405308258}
   - component: {fileID: 1405308257}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8933,7 +9407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1424133253}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Oostbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9051,7 +9525,7 @@ GameObject:
   - component: {fileID: 1442262107}
   - component: {fileID: 1442262106}
   - component: {fileID: 1442262105}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9144,7 +9618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448285915}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Kaagbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9231,6 +9705,10 @@ PrefabInstance:
       value: RunwayStart
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffe8e98d009ddb94b9405477f0e63c16, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -9253,7 +9731,7 @@ GameObject:
   - component: {fileID: 1471175955}
   - component: {fileID: 1471175954}
   - component: {fileID: 1471175953}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9349,7 +9827,7 @@ GameObject:
   - component: {fileID: 1483835677}
   - component: {fileID: 1483835676}
   - component: {fileID: 1483835675}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9493,6 +9971,10 @@ PrefabInstance:
       value: RunwayExtend (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -9515,7 +9997,7 @@ GameObject:
   - component: {fileID: 1558293613}
   - component: {fileID: 1558293612}
   - component: {fileID: 1558293611}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9745,6 +10227,10 @@ PrefabInstance:
       value: RunwayBigMarkers (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -9767,7 +10253,7 @@ GameObject:
   - component: {fileID: 1566283078}
   - component: {fileID: 1566283077}
   - component: {fileID: 1566283076}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10019,7 +10505,7 @@ GameObject:
   - component: {fileID: 1587037693}
   - component: {fileID: 1587037692}
   - component: {fileID: 1587037691}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10115,7 +10601,7 @@ GameObject:
   - component: {fileID: 1594543449}
   - component: {fileID: 1594543448}
   - component: {fileID: 1594543447}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10263,6 +10749,10 @@ PrefabInstance:
       value: RunwayBigMarkers
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -10331,6 +10821,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10497,7 +10991,7 @@ GameObject:
   - component: {fileID: 1638900399}
   - component: {fileID: 1638900398}
   - component: {fileID: 1638900397}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10593,7 +11087,7 @@ GameObject:
   - component: {fileID: 1639064836}
   - component: {fileID: 1639064835}
   - component: {fileID: 1639064834}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10741,6 +11235,10 @@ PrefabInstance:
       value: RunwayBigMarkers (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -10760,7 +11258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1656978867}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Banen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10891,7 +11389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1678067777}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Zwanenburgbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10977,6 +11475,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_Name
       value: RunwayExtend (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11144,6 +11646,10 @@ PrefabInstance:
       value: RunwayExtend
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -11163,7 +11669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1736665619}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11200,7 +11706,7 @@ GameObject:
   - component: {fileID: 1747920341}
   - component: {fileID: 1747920340}
   - component: {fileID: 1747920339}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11376,13 +11882,30 @@ GameObject:
   m_Component:
   - component: {fileID: 1768252667}
   - component: {fileID: 1768252666}
+  - component: {fileID: 1768252665}
   m_Layer: 0
-  m_Name: TowerCam (1)
+  m_Name: TowerCamRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &1768252665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768252664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 21
+  m_MaxRayIntersections: 0
 --- !u!20 &1768252666
 Camera:
   m_ObjectHideFlags: 0
@@ -11390,7 +11913,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768252664}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -11452,7 +11975,7 @@ GameObject:
   - component: {fileID: 1784232386}
   - component: {fileID: 1784232385}
   - component: {fileID: 1784232384}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11630,7 +12153,7 @@ GameObject:
   - component: {fileID: 1828657820}
   - component: {fileID: 1828657819}
   - component: {fileID: 1828657818}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11774,6 +12297,10 @@ PrefabInstance:
       value: RunwayExtend (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -11796,7 +12323,7 @@ GameObject:
   - component: {fileID: 1837696806}
   - component: {fileID: 1837696805}
   - component: {fileID: 1837696804}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11940,6 +12467,10 @@ PrefabInstance:
       value: RunwayExtend
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -11959,7 +12490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1861696597}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: polderbaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12003,7 +12534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!20 &1862457365
 Camera:
   m_ObjectHideFlags: 0
@@ -12011,7 +12542,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862457364}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -12055,11 +12586,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862457364}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 169.1, z: 52.7}
+  m_LocalPosition: {x: -35.4, y: 169.1, z: 52.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1875678338
 GameObject:
@@ -12073,7 +12604,7 @@ GameObject:
   - component: {fileID: 1875678342}
   - component: {fileID: 1875678341}
   - component: {fileID: 1875678340}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12317,6 +12848,10 @@ PrefabInstance:
       value: RunwayBigMarkers
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d5b4d9f6aa5c4245ad7ca789e44e2e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -12387,6 +12922,10 @@ PrefabInstance:
       value: RunwayExtend
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68c41b7e1f7ec9746b78c4e5e20524b1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -12409,7 +12948,7 @@ GameObject:
   - component: {fileID: 1949414346}
   - component: {fileID: 1949414345}
   - component: {fileID: 1949414344}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12520,17 +13059,18 @@ RectTransform:
   m_GameObject: {fileID: 1975854850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22791424, y: 0.4968344, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2109802121}
   - {fileID: 682301180}
+  - {fileID: 1124377719}
   m_Father: {fileID: 1013613047}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -318.8, y: 116.8}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -323, y: 103.359314}
+  m_SizeDelta: {x: -661.8137, y: -219.396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975854852
 MonoBehaviour:
@@ -12672,7 +13212,7 @@ GameObject:
   - component: {fileID: 2013132345}
   - component: {fileID: 2013132344}
   - component: {fileID: 2013132343}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12768,7 +13308,7 @@ GameObject:
   - component: {fileID: 2017220583}
   - component: {fileID: 2017220582}
   - component: {fileID: 2017220581}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13041,7 +13581,7 @@ GameObject:
   - component: {fileID: 2052644075}
   - component: {fileID: 2052644074}
   - component: {fileID: 2052644073}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13394,7 +13934,7 @@ RectTransform:
   m_GameObject: {fileID: 2109802120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.387615, y: 2.012743, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 129254042}
   m_Father: {fileID: 1975854851}
@@ -13402,7 +13942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.775299, y: 178}
+  m_AnchoredPosition: {x: 2.2000122, y: 95.177185}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109802122
@@ -13528,7 +14068,7 @@ GameObject:
   - component: {fileID: 2132652853}
   - component: {fileID: 2132652852}
   - component: {fileID: 2132652851}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Road (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

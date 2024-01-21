@@ -11,5 +11,6 @@ public class SpawnData : ScriptableObject
     public List<Vector3> PlaneSpawnPoints;
     public List<Vector3> HangarSpawnPoints;
     public List<Vector3> HangarSpawnRotations;
-    public Transform[] RunwayEndLocation;
+    public Vector3[] RunwayEndLocation;
+    public Vector3[] RunwayStartLocation;
 }
