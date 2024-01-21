@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
                     break;
             case Gamestate.Park:
                     break;
-            case Gamestate.TurnOnLights:
-                break;
         }
 
         OnGameStateChanged?.Invoke(newState);
@@ -92,6 +90,5 @@ public enum Gamestate
 {
     StartMenu,
     Roam,
-    Park,
-    TurnOnLights
+    Park
 }

@@ -10,7 +10,6 @@ public class SwitchOnOff : MonoBehaviour
     private float timer;
     private Button button;
 
-    //private bool isBlinking;
     public bool setLightsOn;
 
     void Awake()

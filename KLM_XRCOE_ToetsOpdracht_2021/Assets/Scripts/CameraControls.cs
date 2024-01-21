@@ -5,17 +5,6 @@ using UnityEngine;
 public class CameraControls : MonoBehaviour
 {
 
-    //public Camera mainCamera;
-    //public Camera birdseyeCamera;
-
-
-    //public Camera towerCameraFront;
-    //public Camera towerCameraRight;
-    //public Camera towerCameraLeft;
-
-    //public Camera ScenicCameraRight;
-    //public Camera ScenicCameraLeft;
-
     public Camera[] cameras;
 
 

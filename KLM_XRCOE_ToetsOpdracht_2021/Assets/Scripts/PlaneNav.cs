@@ -41,7 +41,7 @@ public class PlaneNav : MonoBehaviour
         AssignRunwayToPlane();
         navMeshAgent.destination = startRunwayLocation;
         parkingLocation = AssignHangerToPlane();
-        nextPosition = endRunwayLocation;//transform.position;
+        nextPosition = endRunwayLocation;
     }
 
     private void GameManagerOnGameStateChanged(Gamestate gamestate)
@@ -63,7 +63,6 @@ public class PlaneNav : MonoBehaviour
     {
         if (parkPlane) 
         {
-            //moveToLocation = Hangar.transform;
             navMeshAgent.destination = parkingLocation;
         }
 

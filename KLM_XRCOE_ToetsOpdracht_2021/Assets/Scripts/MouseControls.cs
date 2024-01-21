@@ -8,6 +8,7 @@ public class MouseControls : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
     private Renderer _renderer;
     public GameObject planeDetailText;
+
     // Start is called before the first frame update
     void Start()
     {
