@@ -13,4 +13,6 @@
 * Planes can park in their designated hangars.
 * Camera angles can be swapped between by using keyboard.
 
+## TODO:
+* Roations Hangar Spawn vervangen door een "always look at 0,0,0"?
 
